@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 
   return (
     <main
-      className="relative h-screen overflow-y-scroll font-raleway"
+      className="relative h-screen overflow-y-scroll font-raleway pb-24"
       onScroll={handleScroll}
     >
       <Head>
