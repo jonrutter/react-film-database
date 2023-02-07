@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SearchInput } from './SearchInput/SearchInput';
+import RMDBLogo from '@/public/rmdb-logo.svg';
+import RMDBLogoSmall from '@/public/rmdb-logo-small.svg';
 
 type Props = {
   setQuery?: React.Dispatch<React.SetStateAction<string>>;
@@ -14,20 +16,10 @@ export const Header: React.FC<Props> = ({ setQuery }) => (
       <Link href="/">
         <div className="flex items-center cursor-pointer">
           <div className="hidden md:block">
-            <Image
-              width="150"
-              height="41"
-              src="/rmdb-logo.svg"
-              alt="React Movie Database"
-            />
+            <Image src={RMDBLogo} alt="React Movie Database" />
           </div>
           <div className="md:hidden">
-            <Image
-              width="42"
-              height="42"
-              src="/rmdb-logo-small.svg"
-              alt="React Movie Database"
-            />
+            <Image src={RMDBLogoSmall} alt="React Movie Database" />
           </div>
         </div>
       </Link>

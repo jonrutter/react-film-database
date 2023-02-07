@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import TMDBLogo from '@/public/tmdb-logo.svg';
 
 type Props = {
   setQuery: React.Dispatch<React.SetStateAction<string>>;
@@ -37,10 +38,8 @@ export const SearchInput: React.FC<Props> = ({ setQuery }) => {
       </label>
       <div className="absolute right-4 top-2">
         <Image
-          src="/tmdb-logo.svg"
+          src={TMDBLogo}
           alt="The Movie Database"
-          width="30"
-          height="22"
           className="pointer-events-none select-none"
         />
       </div>
