@@ -3,11 +3,6 @@ import { Html, Head, Main, NextScript } from 'next/document';
 const Document = () => (
   <Html lang="en">
     <Head>
-      {/* fonts */}
-      <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
-        rel="stylesheet"
-      />
       {/* favicon / manifest */}
       <link rel="manifest" href="/manifest.json" />
       <link rel="apple-touch-icon" href="/logo192.png" />
@@ -29,7 +24,7 @@ const Document = () => (
         href="/favicon-16x16.png"
       />
     </Head>
-    <body className="font-raleway">
+    <body>
       <Main />
       <NextScript />
     </body>
