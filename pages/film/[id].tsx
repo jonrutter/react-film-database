@@ -10,7 +10,7 @@ import { baseFetch } from '@/api/baseFetch';
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import type { Movie, Credits, Crew, Cast } from '@/api/types';
 import { Header } from '@/components/Header/Header';
-import { Breadcrumb } from '@/components/BreadCrumb/BreadCrumb';
+import { Breadcrumb } from '@/components/Breadcrumb/Breadcrumb';
 import { FilmInfo } from '@/components/FilmInfo/FilmInfo';
 import { Grid } from '@/components/Grid/Grid';
 import { Card } from '@/components/Card/Card';
