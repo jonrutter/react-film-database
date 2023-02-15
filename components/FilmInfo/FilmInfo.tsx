@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { calcTime, convertMoney } from '@/helpers';
+import { formatMoney } from '@/utils/formatMoney';
+import { formatTime } from '@/utils/formatTime';
 import { Thumbnail } from '../Thumbnail/Thumbnail';
 import { Chip } from './Chip/Chip';
 import type { Crew } from '@/api/types';
