@@ -5,6 +5,7 @@ import { formatTime } from '@/utils/formatTime';
 import { Thumbnail } from '../Thumbnail/Thumbnail';
 import { Chip } from './Chip/Chip';
 import type { Crew } from '@/api/types';
+import NoImage from '@/public/no-avatar.svg';
 
 type Props = {
   thumbUrl: string;

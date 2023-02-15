@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import NoImage from '@/public/no-avatar.png';
+import NoImage from '@/public/no-avatar.svg';
 
 type Props = {
   imgUrl?: string;
