@@ -25,16 +25,17 @@ export const SearchInput: React.FC<Props> = ({ setQuery }) => {
   };
 
   return (
-    <>
-      <label>
+    <div className="relative flex items-center bg-slate-900 text-slate-50 rounded-full">
+      <label className="relative z-10">
         <input
           type="text"
           placeholder="search movies"
           value={inputValue}
           aria-label="search movies"
           onChange={handleInput}
-          className="h-10 w-52 pr-14 md:w-96 rounded-full p-4 text-md bg-zinc-700 text-white focus:outline-none focus:ring-2 focus:ring-cyan-200"
+          className="h-10 w-52 pr-14 md:w-96 rounded-full p-4 text-md bg-transparent focus:outline-none focus:ring-2 focus:ring-cyan-200"
         />
+        <span className="sr-only">search movies</span>
       </label>
       <div className="absolute right-4 top-2">
         <Image
@@ -43,6 +44,6 @@ export const SearchInput: React.FC<Props> = ({ setQuery }) => {
           className="pointer-events-none select-none"
         />
       </div>
-    </>
+    </div>
   );
 };
