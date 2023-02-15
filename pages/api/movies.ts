@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { SEARCH_BASE_URL, POPULAR_BASE_URL } from '@/config';
+import { SEARCH_BASE_URL, POPULAR_BASE_URL } from '@/api/config';
 import { baseFetch } from '@/api/baseFetch';
 import type { Movies, Movie } from '@/api/types';
 

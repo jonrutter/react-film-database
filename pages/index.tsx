@@ -6,7 +6,7 @@ import { Grid } from '@/components/Grid/Grid';
 import { Card } from '@/components/Card/Card';
 import { Spinner } from '@/components/Spinner/Spinner';
 import { useFetchMovies } from '@/api/useFetchMovies';
-import { IMAGE_BASE_URL, BACKDROP_SIZE, POSTER_SIZE } from '@/config';
+import { IMAGE_BASE_URL, BACKDROP_SIZE, POSTER_SIZE } from '@/api/config';
 import Link from 'next/link';
 import Head from 'next/head';
 

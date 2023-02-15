@@ -5,7 +5,7 @@ import {
   IMAGE_BASE_URL,
   BACKDROP_SIZE,
   POSTER_SIZE,
-} from '@/config';
+} from '@/api/config';
 import { baseFetch } from '@/api/baseFetch';
 import type { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import type { Movie, Credits, Crew, Cast } from '@/api/types';
