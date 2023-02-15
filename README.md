@@ -1,38 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# React Film Database
 
-## Getting Started
+![Netlify Status](https://api.netlify.com/api/v1/badges/6a656174-7eb1-4a23-8622-8a55da564854/deploy-status)
+[![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://rfdb.netlify.app/)
+[![Current Version](https://img.shields.io/badge/version-2.1.0-green.svg)](https://github.com/jonrutter/react-film-database)
+[![GitHub Stars](https://img.shields.io/github/stars/jonrutter/react-film-database.svg)](https://github.com/jonrutter/react-film-database/stargazers)
+[![GitHub Issues](https://img.shields.io/github/issues/jonrutter/react-film-database.svg)](https://github.com/jonrutter/react-film-database/issues)
 
-First, run the development server:
+A fast and easy-to-use film database web application.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#live-demo">Live Demo</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#author">Author</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#acknowledgements">Acknowledgments</a></li>
+  </ol>
+</details>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+React Film Database is a web application that allows users to browse and search for details about films. Load up the app to see a list of the most popular movies out right now, or use the searchbox to find your favorite film.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+![Preview of the React Film Database project](./.github/preview-main.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br />
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The project sources its data from The Movie Database API, and utilizes Netlify serverless functions to hide the api key in production.
 
-## Learn More
+## Live Demo
 
-To learn more about Next.js, take a look at the following resources:
+Preview the live demo: [https://rfdb.netlify.app/](https://rfdb.netlify.app/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Built with
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Jon Rutter**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [GitHub Profile](https://www.github.com/jonrutter)
+- [Email](mailto:contact@jonrutter.io)
+- [Website](https://www.jonrutter.io)
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Acknowledgements
+
+- This project uses the [TMDB API](https://www.themoviedb.org/?language=en-US) as a source for all movie data.
+- Credit to [Thomas Weibenfalk](https://www.youtube.com/watch?v=6bxWgYfN4CQ) for creating the original design and idea for this project.
