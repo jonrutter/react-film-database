@@ -1,18 +1,22 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './pages/**/*.{ts,js,tsx,jsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
   theme: {
     extend: {
-      maxWidth: {
-        'site-content': '1040px',
+      fontFamily: {
+        raleway: ['var(--font-raleway)', 'sans-serif'],
       },
-      keyframes: {
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' },
-        },
+      gridTemplateColumns: {
+        'auto-fill': 'repeat(auto-fill, minmax(200px, 1fr))',
       },
-      animation: {
-        fadeIn: 'fadeIn 1s ease-in',
+      height: {
+        128: '40rem',
+      },
+      minHeight: {
+        128: '40rem',
       },
     },
   },

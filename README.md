@@ -24,7 +24,7 @@ A fast and easy-to-use film database web application.
 
 React Film Database is a web application that allows users to browse and search for details about films. Load up the app to see a list of the most popular movies out right now, or use the searchbox to find your favorite film.
 
-![Preview of the React Film Database project](./github/preview-main.png)
+![Preview of the React Film Database project](./.github/preview-main.png)
 
 <br />
 
@@ -36,6 +36,7 @@ Preview the live demo: [https://rfdb.netlify.app/](https://rfdb.netlify.app/)
 
 ## Built with
 
+- [Next.js](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [React](https://reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
