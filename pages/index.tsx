@@ -40,19 +40,20 @@ const Home: NextPage = () => {
               ? IMAGE_BASE_URL +
                 BACKDROP_SIZE +
                 data.pages[0].results[0].backdrop_path
-              : '/no_image.jpg'
+              : ''
           }
           title={data.pages[0].results[0].title}
           text={data.pages[0].results[0].overview}
+          id={data.pages[0].results[0].id}
         />
       ) : null}
       {data && data.pages ? (
         <Grid
-          className="p-4 max-w-screen-xl mx-auto"
+          className="p-6 max-w-screen-xl mx-auto"
           title={
             query
               ? `Search Results: ${data?.pages[0].total_results || 0}`
-              : 'Popular Movies'
+              : 'Popular Films'
           }
         >
           {data && data.pages
