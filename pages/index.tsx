@@ -22,7 +22,15 @@ const Home: NextPage = () => {
     if (scrollHeight - scrollTop === clientHeight) fetchNextPage();
   };
 
-  if (error) return <div>Oops! Sorry, something went wrong.</div>;
+  if (error)
+    return (
+      <div>
+        <Head>
+          <title>Error | React Film Database</title>
+        </Head>
+        Oops! Sorry, something went wrong.
+      </div>
+    );
 
   return (
     <main
