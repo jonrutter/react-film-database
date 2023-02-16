@@ -2,8 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { SearchInput } from './SearchInput/SearchInput';
-import LogoFull from '@/public/logo-full.svg';
-import LogoSmall from '@/public/logo-small.svg';
+import LogoFull from '@/assets/images/logo-full.svg';
+import LogoSmall from '@/assets/images/logo-small.svg';
 
 type Props = {
   setQuery?: React.Dispatch<React.SetStateAction<string>>;

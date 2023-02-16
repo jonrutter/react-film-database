@@ -4,7 +4,7 @@ import { formatMoney } from '@/utils/formatMoney';
 import { formatTime } from '@/utils/formatTime';
 import { Chip } from './Chip/Chip';
 import type { Crew } from '@/api/types';
-import NoImage from '@/public/no-avatar.svg';
+import NoImage from '@/assets/images/no-avatar.svg';
 
 type Props = {
   thumbUrl: string;

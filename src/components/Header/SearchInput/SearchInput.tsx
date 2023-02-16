@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import TMDBLogo from '@/public/tmdb-logo.svg';
+import TMDBLogo from '@/assets/images/tmdb-logo.svg';
 
 type Props = {
   setQuery: React.Dispatch<React.SetStateAction<string>>;
