@@ -66,24 +66,20 @@ const Home: NextPage = () => {
         >
           {data && data.pages
             ? data.pages.map((page) =>
-                page.results.map((movie) => (
-                  <Link
-                    key={movie.id}
-                    href={`/film/${movie.id}`}
-                    aria-label={movie.title}
-                  >
-                    <div className="cursor-pointer hover:opacity-80 duration-300 transition-opacity">
-                      <Card
-                        imgUrl={
-                          movie.poster_path
-                            ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path
-                            : '/no_image.jpg'
-                        }
-                        title={movie.title}
-                      />
-                    </div>
-                  </Link>
-                ))
+                page.results
+                  .filter((page) => !page.adult)
+                  .map((movie) => (
+                    <Card
+                      key={movie.id}
+                      imgUrl={
+                        movie.poster_path
+                          ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path
+                          : '/no_image.jpg'
+                      }
+                      title={movie.title}
+                      href={`/film/${movie.id}`}
+                    />
+                  ))
               )
             : null}
         </Grid>
