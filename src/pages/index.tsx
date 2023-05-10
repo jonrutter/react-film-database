@@ -84,7 +84,11 @@ const Home: NextPage = () => {
             : null}
         </Grid>
       ) : null}
-      {isLoading || isFetching ? <Spinner /> : null}
+      {isLoading || isFetching ? (
+        <div className="my-8">
+          <Spinner />
+        </div>
+      ) : null}
     </main>
   );
 };
