@@ -32,7 +32,7 @@ export const FilmInfo: React.FC<Props> = ({
   revenue,
 }) => (
   <div className="relative w-full h-auto">
-    <div className="relative h-full max-w-screen-xl mx-auto px-6 py-4">
+    <div className="relative h-full max-w-screen-xl mx-auto px-2 py-4">
       <div className="relative min-h-128 w-full h-full flex flex-col md:flex-row p-4 z-10 rounded-xl bg-slate-900/80">
         <div className="relative w-full h-96 md:h-auto md:w-1/3">
           <Image
