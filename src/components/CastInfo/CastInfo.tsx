@@ -58,7 +58,7 @@ export const CastInfo: React.FC<Props> = ({
             placeholder="blur"
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMLe3eBAAExQIZHGZNfQAAAABJRU5ErkJggg=="
             fill
-            className="object-cover rounded-lg pointer-events-none select-none"
+            className="object-cover rounded-lg pointer-events-none select-none animate-fade-in"
             sizes={
               thumbUrl
                 ? '(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 33vw'
@@ -113,7 +113,7 @@ export const CastInfo: React.FC<Props> = ({
         priority
         placeholder="blur"
         blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNMLe3eBAAExQIZHGZNfQAAAABJRU5ErkJggg=="
-        className="object-cover object-center pointer-events-none select-none"
+        className="object-cover object-center pointer-events-none select-none animate-fade-in"
         fill
         src={backgroundImgUrl}
         alt=""
