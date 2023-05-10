@@ -1,5 +1,3 @@
-import type { Movies } from './types';
-
 export const baseFetch = async <ReturnType>(
   endpoint: string
 ): Promise<ReturnType> => {

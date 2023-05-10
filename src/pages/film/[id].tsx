@@ -66,6 +66,7 @@ const FilmPage: NextPage<Props> = ({ movie, directors, cast, error }) => (
               }
               title={actor.name}
               subtitle={actor.character}
+              href={`/cast/${actor.id}`}
             />
           ))}
         </Grid>

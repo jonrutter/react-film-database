@@ -25,17 +25,17 @@ export const SearchInput: React.FC<Props> = ({ setQuery }) => {
   };
 
   return (
-    <div className="relative flex items-center bg-slate-900 text-slate-50 rounded-full">
+    <div className="relative flex items-center bg-slate-100 text-slate-700 rounded-full">
       <label className="relative z-10">
         <input
           type="text"
-          placeholder="search movies"
+          placeholder="search films"
           value={inputValue}
-          aria-label="search movies"
+          aria-label="search films"
           onChange={handleInput}
-          className="h-10 w-52 pr-14 md:w-96 rounded-full p-4 text-md bg-transparent focus:outline-none focus:ring-2 focus:ring-cyan-200"
+          className="h-10 w-52 pr-14 md:w-96 rounded-full p-4 text-md bg-transparent focus:outline-none focus:ring-2 focus:ring-cyan-200 focus:ring-offset-2 focus:ring-offset-slate-900"
         />
-        <span className="sr-only">search movies</span>
+        <span className="sr-only">search films</span>
       </label>
       <div className="absolute right-4 top-2">
         <Image
