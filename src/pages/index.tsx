@@ -61,7 +61,7 @@ const Home: NextPage = () => {
           title={
             query
               ? `Search Results: ${data?.pages[0].total_results || 0}`
-              : 'Popular Films'
+              : 'Explore Popular Films'
           }
         >
           {data && data.pages
