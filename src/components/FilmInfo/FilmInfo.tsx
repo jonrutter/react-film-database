@@ -84,9 +84,12 @@ export const FilmInfo: React.FC<Props> = ({
                     text={`Running time: ${formatTime(time)}`}
                   />
                 </li>
-                <li className="ml-4 mt-4">
-                  <Chip text={`Budget: ${formatMoney(budget)}`} />
-                </li>
+                {/* only show the budget if there is data */}
+                {typeof budget === 'number' && budget > 0 ? (
+                  <li className="ml-4 mt-4">
+                    <Chip text={`Budget: ${formatMoney(budget)}`} />
+                  </li>
+                ) : null}
                 <li className="ml-4 mt-4">
                   <Chip text={`Revenue: ${formatMoney(revenue)}`} />
                 </li>
