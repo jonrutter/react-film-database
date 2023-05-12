@@ -77,12 +77,20 @@ export const FilmInfo: React.FC<Props> = ({
             </div>
             <div className="mt-8">
               <h3 className="text-lg md:text-xl font-bold mb-2">Stats</h3>
-              <Chip
-                className="ml-0"
-                text={`Running time: ${formatTime(time)}`}
-              />
-              <Chip text={`Budget: ${formatMoney(budget)}`} />
-              <Chip text={`Revenue: ${formatMoney(revenue)}`} />
+              <ul className="flex items-center justify-start flex-wrap -ml-4 -mt-4">
+                <li className="ml-4 mt-4">
+                  <Chip
+                    className="ml-0"
+                    text={`Running time: ${formatTime(time)}`}
+                  />
+                </li>
+                <li className="ml-4 mt-4">
+                  <Chip text={`Budget: ${formatMoney(budget)}`} />
+                </li>
+                <li className="ml-4 mt-4">
+                  <Chip text={`Revenue: ${formatMoney(revenue)}`} />
+                </li>
+              </ul>
             </div>
           </div>
         </section>

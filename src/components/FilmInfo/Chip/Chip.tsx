@@ -7,7 +7,7 @@ type Props = {
 
 export const Chip: React.FC<Props> = ({ text, className }) => (
   <div
-    className={`bg-cyan-800 text-white text-sm font-bold px-2 py-1 m-2 rounded-full inline-block ${className}`}
+    className={`bg-cyan-800 text-white text-sm font-bold px-2 py-1 rounded-full inline-block ${className}`}
   >
     {text}
   </div>
